@@ -1,0 +1,17 @@
+﻿@model List<Question>
+
+<h1> Welcome to the Questions Index page! </h1>
+<a asp-controller="Questions" asp-action="Create">Ask a question</a>
+
+<hr />
+
+@if(Model != null) {
+    <ul>
+        @foreach (Question q in Model)
+        {
+            <li>
+                <a asp-controller="Questions" asp-action="ViewQuestion" asp-route-id="@q.Id">@q.Title</a>
+            </li>
+        }
+    </ul>
+}

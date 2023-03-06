@@ -1,0 +1,10 @@
+﻿@model Question
+
+<h1>You are currently answering the question:</h1>
+<h2>@Model.Title</h2>
+
+<form method="post" asp-controller="Answers" asp-action="AnswerQuestion" asp-route-id="@Model.Id">
+    <textarea id="Body" name="Body"></textarea>
+    <input type="hidden" id="QuestionId" name="QuestionId" value="@Model.Id" />
+    <input type="submit" class="btn btn-primary" value="Submit" />
+</form>

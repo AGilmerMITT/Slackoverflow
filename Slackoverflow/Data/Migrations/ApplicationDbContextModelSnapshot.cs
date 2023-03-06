@@ -257,7 +257,7 @@ namespace Slackoverflow.Data.Migrations
 
                     b.HasIndex("SlackUserId");
 
-                    b.ToTable("Answers");
+                    b.ToTable("Answers", (string)null);
                 });
 
             modelBuilder.Entity("Slackoverflow.Models.AnswerComment", b =>
@@ -288,7 +288,7 @@ namespace Slackoverflow.Data.Migrations
 
                     b.HasIndex("SlackUserId");
 
-                    b.ToTable("AnswerComments");
+                    b.ToTable("AnswerComments", (string)null);
                 });
 
             modelBuilder.Entity("Slackoverflow.Models.AnswerVote", b =>
@@ -317,7 +317,7 @@ namespace Slackoverflow.Data.Migrations
 
                     b.HasIndex("SlackUserId");
 
-                    b.ToTable("AnswerVotes");
+                    b.ToTable("AnswerVotes", (string)null);
                 });
 
             modelBuilder.Entity("Slackoverflow.Models.Question", b =>
@@ -353,7 +353,7 @@ namespace Slackoverflow.Data.Migrations
 
                     b.HasIndex("SlackUserId");
 
-                    b.ToTable("Questions");
+                    b.ToTable("Questions", (string)null);
                 });
 
             modelBuilder.Entity("Slackoverflow.Models.QuestionComment", b =>
@@ -384,7 +384,7 @@ namespace Slackoverflow.Data.Migrations
 
                     b.HasIndex("SlackUserId");
 
-                    b.ToTable("QuestionComments");
+                    b.ToTable("QuestionComments", (string)null);
                 });
 
             modelBuilder.Entity("Slackoverflow.Models.QuestionTag", b =>
@@ -399,7 +399,7 @@ namespace Slackoverflow.Data.Migrations
 
                     b.HasIndex("TagId");
 
-                    b.ToTable("QuestionTags");
+                    b.ToTable("QuestionTags", (string)null);
                 });
 
             modelBuilder.Entity("Slackoverflow.Models.QuestionVote", b =>
@@ -428,7 +428,7 @@ namespace Slackoverflow.Data.Migrations
 
                     b.HasIndex("SlackUserId");
 
-                    b.ToTable("QuestionVotes");
+                    b.ToTable("QuestionVotes", (string)null);
                 });
 
             modelBuilder.Entity("Slackoverflow.Models.Tag", b =>
@@ -445,7 +445,7 @@ namespace Slackoverflow.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tags");
+                    b.ToTable("Tags", (string)null);
                 });
 
             modelBuilder.Entity("Slackoverflow.Models.SlackUser", b =>
